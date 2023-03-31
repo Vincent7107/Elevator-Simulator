@@ -12,9 +12,8 @@ void call_which_elevator(Elevator& elevator1, Elevator& elevator2, int current, 
 
 int main()
 {
-    Elevator elevator1(1), elevator2(2);
+    Elevator elevator1(1), elevator2(2); //創建題目指定兩台電梯
     int current, specified;
-
     while (cin) {
         cout << "elevator1:";
         elevator1.display_floor();
@@ -23,7 +22,7 @@ int main()
         cout << "input your current floor and the desired floor: ";
         cin >> current >> specified;
         call_which_elevator(elevator1, elevator2, current, specified);
-        system("cls");
+        system("cls"); //更新
     }
 
 }
